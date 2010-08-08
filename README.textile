@@ -1,10 +1,10 @@
-h1. PresentaciÛn de Diapositivas sobre Lojban 
+Ôªøh1. Presentaci√≥n de Diapositivas sobre Lojban 
 
 h3. Leo Molas
 
-PresentaciÛn hecha en L^a^T~e~X, principalmente utilizando el paquete Beamer, sobre el lenguaje artificial *Lojban*.
+Presentaci√≥n hecha en L^a^T~e~X, principalmente utilizando el paquete Beamer, sobre el lenguaje artificial *Lojban*.
 
-Ser· presentada en las Jornadas del Sur 2010, en la ciudad de BahÌa Blanca, Argentina.
+Ser√° presentada en las Jornadas del Sur 2010, en la ciudad de Bah√≠a Blanca, Argentina.
 
-Esta obra est· licenciada bajo una Licencia Attribution-NonCommercial-ShareAlike 2.5 Argentina de Creative Commons. Para ver una copia de esta licencia, visite "esta p·gina":http://creativecommons.org/licenses/by-nc-sa/2.5/ar/ o envÌenos una carta a  Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+Esta obra est√° licenciada bajo una Licencia Attribution-NonCommercial-ShareAlike 2.5 Argentina de Creative Commons. Para ver una copia de esta licencia, visite "esta p√°gina":http://creativecommons.org/licenses/by-nc-sa/2.5/ar/ o env√≠enos una carta a  Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
