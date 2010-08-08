@@ -1,0 +1,188 @@
+% Presentación creada por:
+%
+%  _                   __  __       _           
+% | |                 |  \/  |     | |          
+% | |      ___  ___   | \  / | ___ | | __ _ ___ 
+% | |     / _ \/ _ \  | |\/| |/ _ \| |/ _` / __|
+% | |____|  __/ (_) | | |  | | (_) | | (_| \__ \
+% |______|\___|\___/  |_|  |_|\___/|_|\__,_|___/
+%
+% leos (dot) molas (at) gmail (dot) com
+
+\documentclass[pdf,xcolor=svgnames]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{helvet}
+\usepackage{hyperref}
+%\usepackage{color}
+
+\usetheme{Hannover}
+\usecolortheme[named=FireBrick]{structure} 
+\setbeamercovered{transparent}
+
+\title[Lojban: El Lenguaje Lógico]{Lojban\\ El Lenguaje Lógico}
+\author{Leo Molas}
+\institute{Jornadas del Sur}
+\logo{\includegraphics[scale=0.5]{lojban.png}}
+\usefonttheme[onlylarge]{structurebold}
+\usefonttheme[onlymath]{serif}
+
+\newcommand{\lojban}[1]{{\rmfamily\textcolor{red}{#1}}}
+
+\begin{document}
+
+% outline 
+\AtBeginSection[]
+{
+ \begin{frame}
+  \frametitle{Secciones}
+  \small
+  \tableofcontents[currentsection,hideothersubsections]
+  \normalsize
+ \end{frame}
+}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\section{Introducción}
+
+\begin{frame}
+\frametitle{¿Qué es Lojban?}
+\begin{center}
+\insertlogo
+\end{center}
+\begin{block}{}
+Lojban es un lenguaje artificial, creado con el propósito y la esperanza de eliminar gran parte de la ambigüedad de la comunicación humana.
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+
+\begin{center}
+\lojban{\LARGE .i mi'e la .leos.molas. .i mi ba tavla ro do la lojban}
+\end{center}
+
+\end{frame}
+
+
+
+\subsection{Características}
+
+\begin{frame}
+\frametitle{Características}
+\begin{itemize}
+	\item<+-> Lojban está diseñado para ser usado por personas para comunicarse entre sí, y posiblemente en el futuro también con computadoras.
+	\item<+-> Lojban está diseñado para ser \textbf{culturalmente neutral}.
+	\item<+-> La gramática del lojban se basa en los \textbf{principios de la lógica}.
+	\item<+-> Lojban tiene una \textbf{gramática sin ambigüedades}.
+	\item<+-> Lojban tiene una \textbf{ortografía fonética}, y una resolución isomorfa de \textbf{sonidos} en \textbf{palabras}.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Características}
+\begin{itemize}
+	\item<+-> Lojban es \textbf{simple} en comparación con los lenguajes naturales; es \textbf{fácil de aprender}.
+	\item<+-> Las \textbf{1300 raíces} básicas del lojban se pueden combinar fácilmente para formar un vocabulario de millones de palabras.
+	\item<+-> El lojban es \textbf{regular}; las reglas del lenguaje \textbf{no tienen excepciones}.
+	\item<+-> Lojban intenta \textbf{quitar restricciones} al pensamiento y la comunicación, para que sean claros y creativos.
+	\item<+-> Lojban tiene una \textbf{variedad de usos}, desde lo creativo a lo científico, desde lo teórico a lo práctico.
+\end{itemize}
+\end{frame}
+
+
+
+\section{Historia}
+
+\subsection{Loglan}
+
+\begin{frame}
+\frametitle{Loglan}
+\begin{block}{}
+Lojban nació a partir de otro lenguaje, llamado \textbf{Loglan} (o ``The Logical Language''). 
+\end{block}
+\pause
+
+En 1955, el \textbf{Dr. James Cooke Brown} (aka JCB) comenzó la creación de Loglan, con el objetivo de crear un lenguaje totalmente diferente a los naturales, para intentar demostrar la \textbf{Hipótesis de Sapir-Whorf}. {\footnotesize(Más adelante lo explicaré...)}
+\pause
+
+Con ya con una descripción sólida de este, en 1960 hizo un \textit{call for assistance} en la revista \textit{Scientific American}. Varios lingüistas y entusiastas se sumaron al proyecto, y formaron el \textbf{Loglan Institute}.
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Loglan}
+Su estructura gramátical está definida en base al \textbf{Cálculo de Predicados}, o \textbf{Lógica de Primer Orden}.
+\pause
+\begin{center}
+\[ 
+  \forall x (f(a,x)\rightarrow g(x,b))\rightarrow (\forall x (f(a,x)) \rightarrow \forall x (g(x,b)))
+\] 
+\end{center}
+\end{frame}
+
+
+
+\subsection{Nacimiento de Lojban}
+
+\begin{frame}
+\frametitle{Nacimiento de Lojban}
+JCB decidió reclamar los derechos de \textbf{copyright} sobre el lenguaje, lo cual fue un golpe para la comunidad que había trabajado en él. 
+\pause
+
+Por esta razón, un grupo de loglanistas, liderado por \textbf{Bob LeChevalier} (aka \lojban{lojbab}), decidió comenzar un proyecto paralelo, partiendo de la gramática de Loglan, y reinventando todo el vocabulario. Este nuevo proyecto se llamó Lojban, llamado así por las palabras ``\textit{lenguaje lógico}'' en Lojban (\lojban{logji bangu}).
+
+\end{frame}
+
+
+
+\subsection{El LLG}
+
+\begin{frame}
+\frametitle{El LLG}
+Finalmente, en 1987 se creó el \textbf{Logical Languaje Group} (aka LLG, o \lojban{la lojbangirz.}), presidido por Bob LeChevalier, con el objetivo de guiar el \textbf{desarrollo del lenguaje}, y promover su uso. Es una fundación sin fines de lucro, que mantiene todo el material acerca de Lojban en \textbf{Dominio Público}.
+\pause
+
+Actualmente:
+\begin{itemize}
+	\item<+-> Mantiene la página oficial de Lojban, \url{www.lojban.org}, así como varias listas de correos, en varios idiomas.
+	\item<+-> Edita el libro ``The Complete Lojban Grammar'', donde está explicado el lenguaje en su totalidad.
+	\item<+-> Regula el desarrollo del lenguaje.
+	\item<+-> Realiza anualmente una reunión, llamada \textbf{Logfest}.
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Logfest}
+
+\end{frame}
+
+
+\section{¿Por qué aprender Lojban?}
+\begin{frame}
+
+
+
+\end{frame}
+
+%\section*{Referencias}
+%\begin{frame}
+%\begin{thebibliography}
+%
+%\end{thebibliography}
+%\end{frame}
+
+\end{document}
