@@ -22,7 +22,7 @@
 
 \usetheme{Hannover}
 \usecolortheme[named=FireBrick]{structure} 
-\setbeamercovered{transparent}
+\setbeamercovered{transparent} 
 
 \title[Lojban: El Lenguaje Lógico]{Lojban\\ El Lenguaje Lógico}
 \author{Leo Molas}
@@ -32,6 +32,8 @@
 \usefonttheme[onlymath]{serif}
 
 \newcommand{\lojban}[1]{{\rmfamily\textcolor{red}{#1}}}
+
+\date{16 de Agosto de 2010}
 
 \begin{document}
 
@@ -70,7 +72,7 @@ Lojban es un lenguaje artificial, creado con el propósito y la esperanza de elim
 \begin{frame}
 
 \begin{center}
-\lojban{\LARGE .i mi'e la .leos.molas. .i mi ba tavla ro do la lojban}
+\lojban{\LARGE .i mi'e la .leos.molas. .i mi tavla ba ro do la lojban}
 \end{center}
 
 \end{frame}
@@ -86,7 +88,7 @@ Lojban es un lenguaje artificial, creado con el propósito y la esperanza de elim
 	\item<+-> Lojban está diseñado para ser \textbf{culturalmente neutro}.
 	\item<+-> La gramática del Lojban se basa en los \textbf{principios de la lógica}.
 	\item<+-> Lojban tiene una \textbf{gramática sin ambigüedades}.
-	\item<+-> Lojban tiene una \textbf{ortografía fonética}, y una resolución isomorfa de \textbf{sonidos} en \textbf{palabras}.
+	\item<+-> Lojban tiene una \textbf{ortografía fonética}, y una resolución unívoca de \textbf{sonidos} en \textbf{palabras}.
 \end{itemize}
 \end{frame}
 
@@ -241,13 +243,197 @@ Loglan/Lojban fue creado con varias características claras para intentar probar 
 \end{frame}
 
 %%%%%%%% FRAME %%%%%%%%%%%%
-%
-%\section{Gramática}
-%\subsection{Estructura de una oración}
-%\begin{frame}
-%\frametitle{Estructura de una oración}
-%
-%\end{frame}
+
+\section{¿Cómo es Lojban?}
+\subsection{Ortografía}
+\begin{frame}
+\frametitle{Ortografía}
+
+Lojban utiliza un subconjunto del alfabeto romano:
+
+\pause
+\begin{center}
+{\ttfamily ' , . a b c d e f g i j k l m n o p r s t u v x y z}
+\end{center}
+
+Los caracteres especiales \textit{no} son puntuación.
+
+\pause
+
+El punto (.) no tiene un sonido, sino que simplemente es una pausa. La coma (,) indica un corte en una sílaba.
+
+\pause
+Todas las palabras en Lojban están acentuadas en la penúltima sílaba (son graves), a menos que se indique lo contrario, poniendo la sílaba en \textsc{Mayúsculas}. Esto sólo sucede en los nombres.
+
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\subsection{Sonido}
+\begin{frame}
+
+\frametitle{Sonido}
+Todos los caracteres suenan igual al castellano, salvo:
+
+\begin{itemize}
+	\item <+-> [c] Suena como sh en inglés.
+	\item <+-> [g] Suena siempre como en \textit{gato}.
+	\item <+-> [j] Suena como en \textit{bonjour}, en francés.
+	\item <+-> [v] Es una mezcla entre una \textit{b} y una \textit{f}.
+	\item <+-> [x] Suena como una \textit{j}.
+	\item <+-> [y] Es una vocal algo extraña, de sonido relajado, y puede sonar parecido a cualquier vocal.
+	\item <+-> [z] Suena como una \textit{z}... pero bien dicha.
+	\item <+-> ['] Es una \textit{g}, suave, o la \textit{h} en inglés (\textit{hello})
+\end{itemize}
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\subsection{Tipos de palabras}
+
+\begin{frame}
+\frametitle{Tipos de palabras}
+\begin{block}{}
+Lojban no hace diferencia entre sustantivos, adjetivos o adverbios.
+\end{block}
+
+\pause
+En cambio, tiene los siguientes tipos de palabras:
+
+\begin{itemize}
+	\item <+-> \lojban{cmene}: Serían los nombres propios. El mío es .leos.molas. % Habría que profundizar...
+	\item <+-> \lojban{cmavo}: Las palabras estructurales. Son cortitas, y no necesariamente tienen un significado.
+	\item <+-> \lojban{brivla}: Son las palabras ``predicado''. Acá recide todo el potencial del lenguaje.
+\end{itemize}
+\pause
+
+Sustantivos, adjetivos, adverbios... todos caerían dentro de la categoría ``\lojban{brivla}''...
+
+\begin{center}
+\LARGE Pero... ¿Cómo?
+\end{center}
+
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\subsection{Una oración}
+
+\begin{frame}
+\frametitle{Una oración}
+Como había comentado, Lojban está basado en el \textit{cálculo de predicados}. Esta consiste en predicados, con una cierta aridad.
+
+Ejemplo:
+\pause
+
+\[
+f(x,y)
+\]
+
+\pause
+\begin{itemize}
+	\item <+-> [f] es el predicado.
+	\item <+-> [x] es el primer argumento.
+	\item <+-> [y] es el segundo argumento.
+\end{itemize}
+
+\pause
+\begin{block}{Para los programadores}
+Esto puede ser pensado también como una función o procedimiento con parámetros.
+\end{block}
+
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Una oración}
+
+En Lojban, esto se traduce en algo así:
+
+\begin{center}
+	\begin{tabular}{c c c}
+		\lojban{ti} & \lojban{zdani} & \lojban{mi} \pause \\
+%		ti & zdani & mi\\
+		primer argumento & predicado & segundo argumento
+	\end{tabular}
+\end{center}
+
+\pause
+Donde los argumentos son conocidos como los sumti, y el predicado como selbri.
+
+\pause
+Cada posición del predicado tiene un significado, que está dada en la definición del predicado. En este caso:
+\begin{block}{\lojban{zdani}}
+$x_1$ es un nido/casa/hogar/guarida/madriguera de $x_2$
+\end{block}
+
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Una oración}
+
+\begin{center}
+	\begin{tabular}{c c c}
+		\lojban{ti} & \lojban{zdani} & \lojban{mi}  \\
+%		ti & zdani & mi\\
+		primer argumento & predicado & segundo argumento
+	\end{tabular}
+\end{center}
+
+\begin{block}{\lojban{zdani}}
+$x_1$ es un nido/casa/hogar/guarida/madriguera de $x_2$
+\end{block}
+
+Dado que:
+\pause
+
+\begin{itemize}
+	\item <+-> [ti] significa \textit{esto} (que está cerca)
+	\item <+-> [mi] significa \textit{yo/mi}.
+\end{itemize}
+\pause
+La oración \lojban{ti zdani mi} significa:
+
+\begin{center}
+	\Large Esta es un nido/casa/hogar/guarida/madriguera de yo
+	\pause
+	
+	\normalsize ó (de una manera más humana...)
+	\pause
+	
+	\Large Esta es mi casa
+\end{center}
+
+\end{frame}
+
+%%%%%%%% FRAME %%%%%%%%%%%%
+
+\subsection{Otra oración}
+
+\begin{frame}
+\frametitle{Otra oración}
+\footnotesize
+Como les había dicho, mi nombre en Lojban es \textbf{\lojban{.leos.molas}}. ¿Por qué es tan extraño?
+\pause
+
+Los nombres propios no pueden ser dichos ni escritos a la ligera en Lojban, para lograr que todas las personas (independientemente de sus \textbf{capacidades de pronunciación}) puedan decirlos; además previenen que los nombres puedan romperse y formar otras palabras.
+
+\pause
+Por ejemplo: \textsc{\textbf{Alejandro}}.
+
+\pause
+Para \textit{lojbanizar} el nombre, le agregamos puntos al principio y al final, y lo escribimos con las letras que correspondan. Finalmente, todos los nombres en Lojban terminan en consonante, así que debemos agregarle una. (Por defecto, se usa la \textsl{s}, pero se puede usar cualquiera.)
+
+\pause
+\begin{center}
+\LARGE
+\lojban{.alexandros.}
+\end{center}
+
+\end{frame}
 
 
 %\section*{Referencias}
