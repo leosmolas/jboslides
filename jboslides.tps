@@ -24,7 +24,7 @@ Class=CLatexEdit
 Document=jboslides.tex
 
 [Frame0_Row0]
-cyCur=500
+cyCur=569
 cyMin=10
 
 [Frame0_Col0]
@@ -32,7 +32,7 @@ cxCur=1252
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=353
-Cursor.column=30
-TopSubLine=344
+Cursor.row=480
+Cursor.column=0
+TopSubLine=487
 
